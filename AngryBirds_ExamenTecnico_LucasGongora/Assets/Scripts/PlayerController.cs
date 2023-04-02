@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 distance;
 
     [SerializeField] private GameObject[] charactersPrefabs;
-    //[SerializeField] private CharacterSelection characterSelection;
     [SerializeField] private int characterSelected;
     public int CharacterSelected { get => characterSelected; set => characterSelected = value; }
 

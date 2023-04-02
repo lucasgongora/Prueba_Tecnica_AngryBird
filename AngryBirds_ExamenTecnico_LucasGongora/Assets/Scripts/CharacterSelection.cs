@@ -11,10 +11,6 @@ public class CharacterSelection : MonoBehaviour
     {
         PreviusCharacter();
     }
-    private void Update()
-    {
-        
-    }
 
     public void NextCharacter()
     {
