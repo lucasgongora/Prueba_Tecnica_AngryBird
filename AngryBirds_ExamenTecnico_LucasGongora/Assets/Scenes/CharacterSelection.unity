@@ -589,6 +589,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1249390376}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+        m_MethodName: SetPlayerPrefsWithSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1083282647}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadScene
@@ -599,18 +611,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Game
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1249390376}
-        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1083282645
@@ -710,10 +710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e1ca446ac369e4dacda32ec5b3d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters:
-  - {fileID: 8348219424602089687, guid: 50b0a79dc023c404bbcf065f3607844f, type: 3}
-  - {fileID: 3243810110531031978, guid: 3713fcaf941617c4a8b998c82d4947f9, type: 3}
-  - {fileID: 6314780948992004356, guid: f9fff89f8c5dd4c498aee05397261387, type: 3}
+  charactersPrefabs: []
   selectedCharacter: 0
 --- !u!1 &1426670325
 GameObject:

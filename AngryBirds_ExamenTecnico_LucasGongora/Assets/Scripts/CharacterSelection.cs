@@ -20,7 +20,7 @@ public class CharacterSelection : MonoBehaviour
         charactersPrefabs[selectedCharacter].SetActive(true);
     }
 
-    public void StartGame()
+    public void SetPlayerPrefsWithSelected()
     {
         PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
     }
