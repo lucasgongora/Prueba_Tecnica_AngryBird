@@ -710,7 +710,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e1ca446ac369e4dacda32ec5b3d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charactersPrefabs: []
+  charactersPrefabs:
+  - {fileID: 8348219424602089687, guid: 50b0a79dc023c404bbcf065f3607844f, type: 3}
+  - {fileID: 3243810110531031978, guid: 3713fcaf941617c4a8b998c82d4947f9, type: 3}
+  - {fileID: 6314780948992004356, guid: f9fff89f8c5dd4c498aee05397261387, type: 3}
   selectedCharacter: 0
 --- !u!1 &1426670325
 GameObject:
