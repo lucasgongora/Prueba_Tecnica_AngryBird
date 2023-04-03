@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6043325949598437283}
   - component: {fileID: 249943247725347481}
   - component: {fileID: -7100941552318435909}
+  - component: {fileID: 1938569999316246016}
   m_Layer: 0
   m_Name: PlayerBomb
   m_TagString: CharactersPrefabs
@@ -101,3 +102,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1.2548383}
   serializedVersion: 2
   m_Radius: 3.8651612
+--- !u!95 &1938569999316246016
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984999540608890679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58e65f27e1151a143b58f19e0609289e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,13 +10,19 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool canDrag = true;
     private Vector3 distance;
-
+    [SerializeField] private GameObject prefabBomb;
+    [SerializeField] private GameObject prefabCharacterDivisible1;
+    [SerializeField] private GameObject prefabCharacterDivisible2;
     [SerializeField] private GameObject[] charactersPrefabs;
     [SerializeField] private int characterSelected;
     public int CharacterSelected { get => characterSelected; set => characterSelected = value; }
 
     void Start()
     {
+        prefabCharacterDivisible1 = GameObject.Find("PlayerBlue");
+        prefabCharacterDivisible2 = GameObject.Find("PlayerBlue");
+        prefabBomb = GameObject.Find("BombExplotion");
+        prefabBomb.SetActive(false);
         characterSelected = PlayerPrefs.GetInt("selectedCharacter");
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -57,5 +64,28 @@ public class PlayerController : MonoBehaviour
         canDrag = false;
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.velocity = -distance.normalized * maxSpeed * distance.magnitude / springRange;
+        if (characterSelected !=0 && characterSelected != 2)
+        {
+            Invoke("ExplotingBombCharacter", 3f);
+        }
+        else
+        {
+            if (characterSelected != 0 && characterSelected != 1)
+            {
+                Invoke("DivisionCharacter", 0.5f);
+            }
+        } 
+    }
+
+    private void ExplotingBombCharacter()
+    {
+        prefabBomb.SetActive(true);
+        charactersPrefabs[characterSelected].SetActive(false);
+        Destroy(prefabBomb, 0.2f);
+    }
+    private void DivisionCharacter()
+    {
+        Instantiate(prefabCharacterDivisible1, transform.position * 0.1f, Quaternion.identity);
+        Instantiate(prefabCharacterDivisible2, transform.position * -0.001f, Quaternion.identity);
     }
 }
