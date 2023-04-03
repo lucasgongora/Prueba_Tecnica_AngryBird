@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Transform pivot;
-    public float springRange;
-    public float maxSpeed;
+    [SerializeField] private Transform pivot;
+    [SerializeField] private float springRange;
+    [SerializeField] private float maxSpeed;
     private Rigidbody2D rb;
     private bool canDrag = true;
     private Vector3 distance;
