@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destroyable : MonoBehaviour
 {
+    [SerializeField] private bool animationScore100;
     [SerializeField] private float resistance;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameObject scoreAnimationPrefab;
@@ -17,6 +18,15 @@ public class Destroyable : MonoBehaviour
                 GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
                 GameObject score = Instantiate(scoreAnimationPrefab, transform.position, Quaternion.identity);
                 Destroy(explosion, 3);
+                if (animationScore100)
+                {
+                    ScoreManager.instance.AddScore100();
+                }
+                else
+                {
+                    ScoreManager.instance.AddScore500();
+                }
+                
             }
             Destroy(gameObject, 0.1f);
         }

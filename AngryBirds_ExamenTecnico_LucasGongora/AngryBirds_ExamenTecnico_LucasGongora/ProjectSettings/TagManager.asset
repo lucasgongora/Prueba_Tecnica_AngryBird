@@ -5,12 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Characters
-  - red
-  - bomb
-  - blue
   - playerOk
   - chatManager
   - ZonaTouch
+  - CharactersPrefabs
+  - Explotion
   layers:
   - Default
   - TransparentFX
