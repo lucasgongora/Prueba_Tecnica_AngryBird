@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resistance: 8
   explosionPrefab: {fileID: 2178273110078837678, guid: 9e89312f02df29e409af73bc92572b66, type: 3}
+  scoreAnimationPrefab: {fileID: 8077423515540376248, guid: 35c522eb59ab0844583d064d15659b08, type: 3}
