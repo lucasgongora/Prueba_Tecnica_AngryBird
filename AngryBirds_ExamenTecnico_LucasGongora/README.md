@@ -30,3 +30,19 @@
 - La seleccion de characters en el script "CharacterSelection" la había realizado con codigo muy literal y poco profesional, Quedando muchas lineas de codigo para una función muy sencilla. Por esto se investigó un mejor método para optimizar el script y reducirlo al actual.
 
 - Se agregó un boton con la imagen del personaje principal en la escena de Game para hacer mas práctico el testeo del proyecto. Su funcion simplemente es la de volver a cargar la escena anterior.
+
+- Las animaciones de los puntos en el momento de la destruccion de objetos está hecha de manera muy simple pero funcional.
+
+- Finalmente se agregó un script ScoreManager para manejar el puntaje en la UI independiente de los demas scripts pensando en que sea un proyecto escalable.
+
+- Se agregaron cajas, tablas y mas enemigos para persibir mejor los efectos agregados en los personajes y las funcionalidades con animaciones.
+
+
+****************************** ACLARACION PERSONAL ***********************************
+Personalmente con mas tiempo disponible, ademas de cumplir con items faltantes, mejoraria varios puntos como:
+* Realizaria el diagrama UML.
+* Mostraria los puntos con un texto animado mas acorde al arte del juego.
+* Sumaria animaciones tambien a los personajes agregados.
+* Agregaria sonidos
+* Sumaría etapas
+* Concluiría efectivamente la funcionalidad delave que se divide en 3 direcciones separadas.

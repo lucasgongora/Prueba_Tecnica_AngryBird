@@ -46,3 +46,4 @@ Personalmente con mas tiempo disponible, ademas de cumplir con items faltantes, 
 * Agregaria sonidos
 * Sumaría etapas
 * Concluiría efectivamente la funcionalidad delave que se divide en 3 direcciones separadas.
+* Agregaria animaciones entre etapas para mostrar la evolucion del usuario.
