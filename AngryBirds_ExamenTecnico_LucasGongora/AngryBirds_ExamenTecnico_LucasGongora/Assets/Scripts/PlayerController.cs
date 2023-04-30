@@ -85,7 +85,24 @@ public class PlayerController : MonoBehaviour
     }
     private void DivisionCharacter()
     {
-        Instantiate(prefabCharacterDivisible1, transform.position * 0.1f, Quaternion.identity);
-        Instantiate(prefabCharacterDivisible2, transform.position * -0.001f, Quaternion.identity);
+
+        GameObject Player2 = Instantiate(prefabCharacterDivisible1, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+        GameObject Player3 = Instantiate(prefabCharacterDivisible2, transform.position, Quaternion.identity);
+
+        Rigidbody2D rbPlayer2 = Player2.AddComponent<Rigidbody2D>();
+        Rigidbody2D rbPlayer3 = Player3.AddComponent<Rigidbody2D>();
+
+        rbPlayer2.velocity = rb.velocity;
+        rbPlayer3.velocity = rb.velocity;
+
+        //rbPlayer2.velocity = Quaternion.AngleAxis(7f, Vector3.forward) * rbPlayer2.velocity;
+        rbPlayer3.velocity = Quaternion.AngleAxis(-7f, Vector3.forward) * rbPlayer3.velocity;
+
+        rbPlayer2.AddForce(transform.right);
+        rbPlayer3.AddForce(transform.right);
+
+        Destroy(gameObject, 6f);
+        Destroy(Player2, 6f);
+        Destroy(Player3, 6f);
     }
 }

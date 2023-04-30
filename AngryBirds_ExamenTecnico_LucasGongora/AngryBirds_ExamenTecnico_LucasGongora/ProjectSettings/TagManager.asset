@@ -5,11 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Characters
-  - playerOk
-  - chatManager
   - ZonaTouch
   - CharactersPrefabs
   - Explotion
+  - zonaTouchs
   layers:
   - Default
   - TransparentFX

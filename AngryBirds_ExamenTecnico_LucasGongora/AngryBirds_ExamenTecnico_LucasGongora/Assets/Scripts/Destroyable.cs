@@ -17,7 +17,8 @@ public class Destroyable : MonoBehaviour
             {
                 GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
                 GameObject score = Instantiate(scoreAnimationPrefab, transform.position, Quaternion.identity);
-                Destroy(explosion, 3);
+                Destroy(explosion, 1.5f);
+                Destroy(score, 1.5f);
                 if (animationScore100)
                 {
                     ScoreManager.instance.AddScore100();
@@ -26,7 +27,6 @@ public class Destroyable : MonoBehaviour
                 {
                     ScoreManager.instance.AddScore500();
                 }
-                
             }
             Destroy(gameObject, 0.1f);
         }
@@ -34,5 +34,6 @@ public class Destroyable : MonoBehaviour
         {
             resistance -= collision.relativeVelocity.magnitude;
         }
+
     }
 }
